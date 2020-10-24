@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from './Button';
 import Logo from '../../assets/froware-logo.svg';
@@ -14,11 +15,15 @@ const StyledLogo = styled.img`
   grid-column: 2/5;
 `;
 
-const Header = ({ text }) => (
+const Header = ({ buttonText }) => (
   <StyledHeader>
     <StyledLogo src={Logo} alt='Froware Logo' />
-    <Button text={text.headerButton} />
+    <Button text={buttonText} />
   </StyledHeader>
 );
+
+Header.propTypes = {
+  buttonText: PropTypes.string,
+};
 
 export default Header;

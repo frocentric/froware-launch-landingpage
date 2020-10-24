@@ -15,7 +15,7 @@ const App = () => (
       />
     </Helmet>
     <GlobalStyle />
-    <Header text={content} />
+    <Header buttonText={content.headerButton} />
   </HelmetProvider>
 );
 
