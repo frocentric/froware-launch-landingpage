@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { GlobalStyle } from './styles/globals';
-import Header from './components/Header';
+import Header from './components/Header/';
 import { content } from './content';
 
 const App = () => (
