@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { GlobalStyle } from './styles/globals';
 import Header from './components/Header/';
+import { Form } from './components/Form';
 import { content } from './content';
 
 const App = () => (
@@ -16,6 +17,12 @@ const App = () => (
     </Helmet>
     <GlobalStyle />
     <Header buttonText={content.headerButton} />
+    <Form
+      elementId="froware-form"
+      scriptSrc="https://froware-form.netlify.app/js/froware-form.js"
+      cssHref= "https://froware-form.netlify.app/styles/froware-form.css"
+    />
+
   </HelmetProvider>
 );
 
