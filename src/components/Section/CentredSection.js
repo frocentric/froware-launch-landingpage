@@ -9,6 +9,11 @@ const Title = styled.h1`
 const Container = styled.div`
   grid-column: 2/12;
   width: 506px;
+  height: 472px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const CentredSection = ({ title, body }) => (

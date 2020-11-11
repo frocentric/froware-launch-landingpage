@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import CentredSection from './CentredSection';
 import RightTextSection from './RightTextSection';
 import LeftTextSection from './LeftTextSection';
+import EmbeddedForm from './EmbeddedForm';
+import Button from '../Button';
 
 const handleBackgroundColour = (alignment) => {
   switch (alignment) {
@@ -32,21 +34,29 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Section = ({ section }) => {
+const Section = React.forwardRef(({ section, onClick, id }, ref) => {
   const { alignment, image, title, body } = section;
 
   const SECTIONS = {
     centre: <CentredSection title={title} body={body} />,
     left: <LeftTextSection title={title} body={body} image={image} />,
     right: <RightTextSection title={title} body={body} image={image} />,
+    none: (
+      <EmbeddedForm title={title} body={body}>
+        Chat / Form
+      </EmbeddedForm>
+    ),
   };
 
   return (
-    <Container>
-      <Wrapper alignment={alignment}>{SECTIONS[alignment]}</Wrapper>
+    <Container ref={ref}>
+      <Wrapper alignment={alignment}>
+        {SECTIONS[alignment]}{' '}
+        {alignment !== 'none' && <Button onClick={onClick} sectionId={id} />}
+      </Wrapper>
     </Container>
   );
-};
+});
 
 Section.propTypes = {
   sections: PropTypes.shape({

@@ -59,7 +59,7 @@ export const content = {
       ],
     },
     {
-      alignment: 'centre',
+      alignment: 'none',
       title: 'Get Involved',
       body: [
         `Now that you know all about us, we’d love to learn more about you. Let’s chat!`,

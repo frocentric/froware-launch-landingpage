@@ -2,14 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  justify-items: center;
-  align-items: center;
-  height: 745px;
-`;
-
 const Container = styled.div`
   grid-column: 2/12;
   display: flex;
@@ -38,19 +30,17 @@ const Children = styled.div`
 `;
 
 const EmbeddedForm = ({ title, body, children }) => (
-  <Grid>
-    <Container>
-      <Text>
-        <h1>{title}</h1>
-        {body.map((text, index) => (
-          <p key={`${index}-${title}`} data-testid='section-text'>
-            {text}
-          </p>
-        ))}
-      </Text>
-      <Children>{children}</Children>
-    </Container>
-  </Grid>
+  <Container>
+    <Text>
+      <h1>{title}</h1>
+      {body.map((text, index) => (
+        <p key={`${index}-${title}`} data-testid='section-text'>
+          {text}
+        </p>
+      ))}
+    </Text>
+    <Children>{children}</Children>
+  </Container>
 );
 
 EmbeddedForm.propTypes = {
