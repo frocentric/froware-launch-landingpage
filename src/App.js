@@ -3,8 +3,9 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { GlobalStyle } from './styles/globals';
 import Header from './components/Header/';
 import Sections from './components/Sections/';
-import EmbeddedForm from './components/Sections/EmbeddedForm'
+import EmbeddedForm from './components/Sections/EmbeddedForm';
 import { content } from './content';
+import Footer from './components/Footer';
 
 const App = () => (
   <HelmetProvider>
@@ -19,9 +20,12 @@ const App = () => (
     <GlobalStyle />
     <Header buttonText={content.headerButton} />
     <Sections sections={content.sections.slice(0, -1)} />
-    <EmbeddedForm title={content.sections[content.sections.length - 1].title} body={content.sections[content.sections.length - 1].body}>
+    <EmbeddedForm
+      title={content.sections[content.sections.length - 1].title}
+      body={content.sections[content.sections.length - 1].body}>
       Chat / Form
     </EmbeddedForm>
+    <Footer content={content.footer}/>
   </HelmetProvider>
 );
 
