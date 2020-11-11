@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from './Button';
-import Logo from '../../assets/froware-logo.svg';
+import Logo from '../Logo';
 
 const StyledHeader = styled.div`
   align-items: center;
@@ -11,13 +11,15 @@ const StyledHeader = styled.div`
   height: 76px;
 `;
 
-const StyledLogo = styled.img`
+const StyledLogo = styled.span`
   grid-column: 2/5;
 `;
 
 const Header = ({ buttonText }) => (
   <StyledHeader>
-    <StyledLogo src={Logo} alt='Froware Logo' />
+    <StyledLogo>
+      <Logo fill='#000' />
+    </StyledLogo>
     <Button text={buttonText} />
   </StyledHeader>
 );
