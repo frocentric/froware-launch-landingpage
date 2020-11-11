@@ -7,7 +7,7 @@
     "react-dom": "^16.13.1",
     "react-helmet-async": "^1.0.7",
     "react-scripts": "3.4.3",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.5",
