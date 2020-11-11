@@ -43,7 +43,9 @@ const EmbeddedForm = ({ title, body, children }) => (
       <Text>
         <h1>{title}</h1>
         {body.map((text, index) => (
-          <p key={`${index}-${title}`}>{body}</p>
+          <p key={`${index}-${title}`} data-testid='section-text'>
+            {text}
+          </p>
         ))}
       </Text>
       <Children>{children}</Children>
@@ -54,6 +56,7 @@ const EmbeddedForm = ({ title, body, children }) => (
 EmbeddedForm.propTypes = {
   title: PropTypes.string.isRequired,
   body: PropTypes.array.isRequired,
+  children: PropTypes.node,
 };
 
 export default EmbeddedForm;

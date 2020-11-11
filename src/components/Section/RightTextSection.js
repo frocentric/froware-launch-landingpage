@@ -16,7 +16,9 @@ const RightTextSection = ({ title, body, image }) => (
     <TextWrapper>
       <h1>{title}</h1>
       {body.map((text, index) => (
-        <p key={`${index}-${title}`}>{text}</p>
+        <p key={`${index}-${title}`} data-testid='section-text'>
+          {text}
+        </p>
       ))}
     </TextWrapper>
   </>

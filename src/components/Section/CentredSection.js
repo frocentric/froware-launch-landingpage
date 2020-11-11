@@ -15,7 +15,9 @@ const CentredSection = ({ title, body }) => (
   <Container>
     <Title>{title}</Title>
     {body.map((text, index) => (
-      <p key={`${index}-${title}`}>{text}</p>
+      <p key={`${index}-${title}`} data-testid='section-text'>
+        {text}
+      </p>
     ))}
   </Container>
 );
