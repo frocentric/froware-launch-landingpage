@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Build and deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
-        env:
+        with:
           GITHUB_TOKEN: ${{ secrets.DEPLOYMENT_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
