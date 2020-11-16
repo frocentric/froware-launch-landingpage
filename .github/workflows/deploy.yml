@@ -22,10 +22,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install
         run: yarn install --frozen-lockfile
-      - name: Build and deploy
+      - name: Build
+        run: yarn build && ls
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
-          BUILD_SCRIPT: yarn && yarn build
