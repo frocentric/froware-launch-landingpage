@@ -4,6 +4,7 @@ import Chevron from '../Chevron';
 
 const StyledButton = styled.div`
   grid-column: 1/-1;
+  padding-bottom: 25px;
 `;
 
 const Button = ({ onClick, sectionId }) => {

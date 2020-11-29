@@ -22,6 +22,14 @@ const InnerWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   height: 173px;
+
+  span {
+    font-size: 70%;
+
+    @media (min-width: 1024px) {
+      width: 100%;
+    }
+  }
 `;
 
 const SocialMedias = styled.div`

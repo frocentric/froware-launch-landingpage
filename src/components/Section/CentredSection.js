@@ -8,12 +8,19 @@ const Title = styled.h1`
 
 const Container = styled.div`
   grid-column: 2/12;
-  width: 506px;
-  height: 472px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    /* display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 745px; */
+  }
 `;
 
 const CentredSection = ({ title, body }) => (

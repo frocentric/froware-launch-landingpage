@@ -13,6 +13,15 @@ const StyledHeader = styled.div`
 
 const StyledLogo = styled.span`
   grid-column: 2/5;
+  svg {
+    width: 140px;
+  }
+
+  @media (min-width: 1024px) {
+    svg {
+      width: 100%;
+    }
+  }
 `;
 
 const Header = ({ buttonText }) => (

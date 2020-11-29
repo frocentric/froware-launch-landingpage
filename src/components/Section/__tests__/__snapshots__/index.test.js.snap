@@ -6,13 +6,18 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-jrsJCI hclGzx"
+        class="sc-jrsJCI evakZi"
       >
         <div
-          class="sc-kEqYlL bpDArD"
+          class="sc-kEqYlL cZbyqC"
         >
+          <img
+            alt="Test Title 2"
+            class="sc-jSFkmK lfJfTN"
+            src="awareness.svg"
+          />
           <div
-            class="sc-eCApGN dwHMYb"
+            class="sc-eCApGN bwVyXU"
           >
             <h1>
               Test Title 2
@@ -28,14 +33,9 @@ Object {
               test body 2
             </p>
           </div>
-          <img
-            alt="Test Title 2"
-            class="sc-jSFkmK jewYPG"
-            src="awareness.svg"
-          />
            
           <div
-            class="sc-pNWxx eGgaaw"
+            class="sc-pNWxx crXZMz"
           >
             <svg
               fill="none"
@@ -72,13 +72,18 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-jrsJCI hclGzx"
+      class="sc-jrsJCI evakZi"
     >
       <div
-        class="sc-kEqYlL bpDArD"
+        class="sc-kEqYlL cZbyqC"
       >
+        <img
+          alt="Test Title 2"
+          class="sc-jSFkmK lfJfTN"
+          src="awareness.svg"
+        />
         <div
-          class="sc-eCApGN dwHMYb"
+          class="sc-eCApGN bwVyXU"
         >
           <h1>
             Test Title 2
@@ -94,14 +99,9 @@ Object {
             test body 2
           </p>
         </div>
-        <img
-          alt="Test Title 2"
-          class="sc-jSFkmK jewYPG"
-          src="awareness.svg"
-        />
          
         <div
-          class="sc-pNWxx eGgaaw"
+          class="sc-pNWxx crXZMz"
         >
           <svg
             fill="none"

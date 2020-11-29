@@ -8,7 +8,12 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 506px;
+  width: 100%;
+  height: 745px;
+
+  @media (min-width: 1024px) {
+    height: 745px;
+  }
 `;
 
 const Text = styled.div`

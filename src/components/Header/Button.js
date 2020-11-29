@@ -10,13 +10,17 @@ const StyledButton = styled.button`
   height: 50px;
   justify-self: end;
   text-transform: uppercase;
-  width: 176px;
+  width: 132px;
+
+  @media (min-width: 1024px) {
+    width: 176px;
+  }
 `;
 
 const Button = ({ text }) => <StyledButton>{text}</StyledButton>;
 
 Button.propTypes = {
-  text: PropTypes.string
+  text: PropTypes.string,
 };
 
 export default Button;

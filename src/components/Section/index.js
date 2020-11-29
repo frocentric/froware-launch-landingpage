@@ -22,16 +22,24 @@ const Container = styled.div`
   display: grid;
   grid-gap: 24px;
   grid-template-columns: repeat(12, 1fr);
+  min-height: 422px;
 `;
 
 const Wrapper = styled.div`
   background-color: ${({ alignment }) => handleBackgroundColour(alignment)};
   grid-column: 1/-1;
-  height: 745px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   justify-items: center;
   align-items: center;
+
+  /* @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 745px;
+  } */
 `;
 
 const Section = React.forwardRef(({ section, onClick, id }, ref) => {
