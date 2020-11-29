@@ -22,6 +22,7 @@ const InnerWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   height: 173px;
+  text-align: center;
 
   span {
     font-size: 70%;
@@ -37,6 +38,10 @@ const SocialMedias = styled.div`
 
   a {
     margin-right: 20px;
+  }
+
+  a:last-child {
+    margin-right: 0;
   }
 `;
 

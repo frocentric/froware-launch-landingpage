@@ -12,7 +12,7 @@ const TextWrapper = styled.div`
 
 const Image = styled.img`
   grid-column: 2/12;
-  width: 100%;
+  max-width: 100%;
   padding-top: 30px;
 
   @media (min-width: 1024px) {

@@ -32,14 +32,6 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(12, 1fr);
   justify-items: center;
   align-items: center;
-
-  /* @media (min-width: 1024px) {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    justify-items: center;
-    align-items: center;
-    height: 745px;
-  } */
 `;
 
 const Section = React.forwardRef(({ section, onClick, id }, ref) => {

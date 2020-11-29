@@ -10,7 +10,7 @@ const StyledButton = styled.button`
   height: 50px;
   justify-self: end;
   text-transform: uppercase;
-  width: 132px;
+  max-width: 132px;
 
   @media (min-width: 1024px) {
     width: 176px;
