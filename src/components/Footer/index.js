@@ -71,10 +71,10 @@ const Footer = ({ content: { social, blurb } }) => (
 Footer.propTypes = {
   content: PropTypes.shape({
     social: PropTypes.shape({
-      facebook: PropTypes.string.isRequired,
-      instagram: PropTypes.string.isRequired,
-      linkedin: PropTypes.string.isRequired,
-      twitter: PropTypes.string.isRequired,
+      facebook: PropTypes.string,
+      instagram: PropTypes.string,
+      linkedin: PropTypes.string,
+      twitter: PropTypes.string,
     }),
     blurb: PropTypes.string.isRequired,
   }),

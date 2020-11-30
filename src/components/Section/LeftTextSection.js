@@ -55,7 +55,7 @@ const LeftTextSection = ({ title, body, image }) => {
   const resizeHandler = () => setIsSmallerScreen(window.innerWidth < 1024);
 
   useEffect(() => {
-    setIsSmallerScreen(window.innerWidth < 1300);
+    setIsSmallerScreen(window.innerWidth < 1024);
     window.addEventListener('resize', resizeHandler);
     return () => window.removeEventListener('resize', resizeHandler);
   }, []);

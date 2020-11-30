@@ -6,16 +6,11 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-jrsJCI evakZi"
+        class="sc-jrsJCI evNOqc"
       >
         <div
-          class="sc-kEqYlL heKzEZ"
+          class="sc-kEqYlL fQShKx"
         >
-          <img
-            alt="Test Title 2"
-            class="sc-jSFkmK kLbfTo"
-            src="awareness.svg"
-          />
           <div
             class="sc-eCApGN bwVyXU"
           >
@@ -33,6 +28,11 @@ Object {
               test body 2
             </p>
           </div>
+          <img
+            alt="Test Title 2"
+            class="sc-jSFkmK kLbfTo"
+            src="awareness.svg"
+          />
            
           <div
             class="sc-pNWxx crXZMz"
@@ -72,16 +72,11 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-jrsJCI evakZi"
+      class="sc-jrsJCI evNOqc"
     >
       <div
-        class="sc-kEqYlL heKzEZ"
+        class="sc-kEqYlL fQShKx"
       >
-        <img
-          alt="Test Title 2"
-          class="sc-jSFkmK kLbfTo"
-          src="awareness.svg"
-        />
         <div
           class="sc-eCApGN bwVyXU"
         >
@@ -99,6 +94,11 @@ Object {
             test body 2
           </p>
         </div>
+        <img
+          alt="Test Title 2"
+          class="sc-jSFkmK kLbfTo"
+          src="awareness.svg"
+        />
          
         <div
           class="sc-pNWxx crXZMz"

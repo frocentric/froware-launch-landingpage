@@ -20,7 +20,6 @@ const handleBackgroundColour = (alignment) => {
 
 const Container = styled.div`
   display: grid;
-  grid-gap: 24px;
   grid-template-columns: repeat(12, 1fr);
   min-height: 422px;
 `;
@@ -32,6 +31,7 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(12, 1fr);
   justify-items: center;
   align-items: center;
+  column-gap: 20px;
 `;
 
 const Section = React.forwardRef(({ section, onClick, id }, ref) => {
