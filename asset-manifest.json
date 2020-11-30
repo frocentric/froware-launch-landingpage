@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/froware-launch-landingpage/static/js/main.d6dd4bdd.chunk.js",
-    "main.js.map": "/froware-launch-landingpage/static/js/main.d6dd4bdd.chunk.js.map",
+    "main.js": "/froware-launch-landingpage/static/js/main.39268ec6.chunk.js",
+    "main.js.map": "/froware-launch-landingpage/static/js/main.39268ec6.chunk.js.map",
     "runtime-main.js": "/froware-launch-landingpage/static/js/runtime-main.88217f49.js",
     "runtime-main.js.map": "/froware-launch-landingpage/static/js/runtime-main.88217f49.js.map",
     "static/js/2.169c019c.chunk.js": "/froware-launch-landingpage/static/js/2.169c019c.chunk.js",
@@ -21,6 +21,6 @@
   "entrypoints": [
     "static/js/runtime-main.88217f49.js",
     "static/js/2.169c019c.chunk.js",
-    "static/js/main.d6dd4bdd.chunk.js"
+    "static/js/main.39268ec6.chunk.js"
   ]
 }
