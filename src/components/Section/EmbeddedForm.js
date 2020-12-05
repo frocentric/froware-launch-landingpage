@@ -9,12 +9,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  height: 745px;
-
-  @media (min-width: 1024px) {
-    height: 745px;
-  }
 `;
 
 const Text = styled.div`
@@ -35,7 +29,7 @@ const EmbeddedForm = ({ title, body, children }) => (
         </p>
       ))}
     </Text>
-    <Form elementId='froware-form' />
+    <Form />
   </Container>
 );
 
