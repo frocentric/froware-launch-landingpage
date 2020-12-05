@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Form from '../Form/';
 
 const Container = styled.div`
   grid-column: 2/12;
@@ -24,16 +25,6 @@ const Text = styled.div`
   height: 316px;
 `;
 
-const Children = styled.div`
-  width: 371px;
-  height: 226px;
-  background: #c4c4c4;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 const EmbeddedForm = ({ title, body, children }) => (
   <Container>
     <Text>
@@ -44,7 +35,7 @@ const EmbeddedForm = ({ title, body, children }) => (
         </p>
       ))}
     </Text>
-    <Children>{children}</Children>
+    <Form elementId='froware-form' />
   </Container>
 );
 

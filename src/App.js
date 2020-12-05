@@ -6,21 +6,35 @@ import Sections from './components/Sections/';
 import { content } from './content';
 import Footer from './components/Footer';
 
-const App = () => (
-  <HelmetProvider>
-    <Helmet>
-      <meta charSet='utf-8' />
-      <title>Froware</title>
-      <link
-        href='https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap'
-        rel='stylesheet'
-      />
-    </Helmet>
-    <GlobalStyle />
-    <Header buttonText={content.headerButton} />
-    <Sections sections={content.sections} />
-    <Footer content={content.footer} />
-  </HelmetProvider>
-);
+const App = () => {
+    const refs = [];
+    content.sections.forEach((_) => {
+      refs.push(React.createRef(null));
+    });
+
+    const handleClick = (id) => {
+      refs[id].current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    };
+
+  return (
+    <HelmetProvider>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Froware</title>
+        <link
+          href='https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap'
+          rel='stylesheet'
+        />
+      </Helmet>
+      <GlobalStyle />
+      <Header buttonText={content.headerButton} onClick={handleClick} lastSection={content.sections.length - 1}/>
+      <Sections sections={content.sections} onClick={handleClick} refs={refs} />
+      <Footer content={content.footer} />
+    </HelmetProvider>
+  );
+};
 
 export default App;

@@ -41,13 +41,9 @@ const Section = React.forwardRef(({ section, onClick, id }, ref) => {
     centre: <CentredSection title={title} body={body} />,
     left: <LeftTextSection title={title} body={body} image={image} />,
     right: <RightTextSection title={title} body={body} image={image} />,
-    none: (
-      <EmbeddedForm title={title} body={body}>
-        Chat / Form
-      </EmbeddedForm>
-    ),
+    none: <EmbeddedForm title={title} body={body} />,
   };
-
+  
   return (
     <Container ref={ref}>
       <Wrapper alignment={alignment}>

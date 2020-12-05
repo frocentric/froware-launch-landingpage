@@ -17,7 +17,9 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({ text }) => <StyledButton>{text}</StyledButton>;
+const Button = ({ text, onClick, lastSection }) => (
+  <StyledButton onClick={() => onClick(lastSection)}>{text}</StyledButton>
+);
 
 Button.propTypes = {
   text: PropTypes.string,
