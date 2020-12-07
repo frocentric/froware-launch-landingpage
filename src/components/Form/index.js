@@ -845,12 +845,10 @@ export default class CustomForm extends React.Component {
     const evt = this.getFormEventAction(event.detail.tag.name);
     if (evt === 'end') {
       window.ConversationalForm.flowManager.stop();
-      document.querySelector("#conversational-form").style[
-        "pointer-events"
-      ] = "none";
+      document.querySelector("#conversational-form").style["pointer-events"] = "none";
       clearMemberId();
       setTimeout(() => {
-        window.location.href = "https://frocentric.org";
+        document.location.href = "https://frocentric.org";
       }, 5000);
     }
   }
@@ -867,7 +865,6 @@ export default class CustomForm extends React.Component {
   }
 
   formEventHandler = (event) => {
-    console.log(event.detail.step);
     this.endConversationHandler(event);
     const evt = this.getFormEventAction(event.detail.tag.name);
 
@@ -880,7 +877,6 @@ export default class CustomForm extends React.Component {
       updateMember(formDataSerialized);
     }
     if (event.detail.step >= 7) {
-      console.log('updating member')
       const formDataSerialized = this.cf.getFormData(true);
       updateMember(formDataSerialized);
     }
