@@ -2,21 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Section from '../Section';
 
-const Sections = ({ sections }) => {
-  const refs = [];
-  sections.forEach((_) => {
-    refs.push(React.createRef(null));
-  });
-
-  const handleClick = (id) => {
-    console.log(id);
-    console.log(sections.length);
-    refs[id].current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  };
-
+const Sections = ({ sections, refs, onClick }) => {
   return (
     <>
       {sections.map((section, index) => (
@@ -24,7 +10,7 @@ const Sections = ({ sections }) => {
           key={section.title}
           section={section}
           ref={refs[index]}
-          onClick={handleClick}
+          onClick={onClick}
           id={index}
         />
       ))}

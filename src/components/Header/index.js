@@ -24,12 +24,12 @@ const StyledLogo = styled.span`
   }
 `;
 
-const Header = ({ buttonText }) => (
+const Header = ({ buttonText, onClick, lastSection }) => (
   <StyledHeader>
     <StyledLogo>
       <Logo fill='#000' />
     </StyledLogo>
-    <Button text={buttonText} />
+    <Button text={buttonText} onClick={onClick} lastSection={lastSection}/>
   </StyledHeader>
 );
 

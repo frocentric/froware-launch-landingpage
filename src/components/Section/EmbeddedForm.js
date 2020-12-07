@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Form from '../Form/';
 
 const Container = styled.div`
   grid-column: 2/12;
@@ -8,12 +9,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  height: 745px;
-
-  @media (min-width: 1024px) {
-    height: 745px;
-  }
 `;
 
 const Text = styled.div`
@@ -22,16 +17,6 @@ const Text = styled.div`
   align-items: center;
   flex-direction: column;
   height: 316px;
-`;
-
-const Children = styled.div`
-  width: 371px;
-  height: 226px;
-  background: #c4c4c4;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 const EmbeddedForm = ({ title, body, children }) => (
@@ -44,7 +29,7 @@ const EmbeddedForm = ({ title, body, children }) => (
         </p>
       ))}
     </Text>
-    <Children>{children}</Children>
+    <Form />
   </Container>
 );
 

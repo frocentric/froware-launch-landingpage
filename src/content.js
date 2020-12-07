@@ -11,7 +11,7 @@ export const content = {
       alignment: 'centre',
       title: 'Tech through our eyes',
       body: [
-        'Yo! Welcome to Froware, a community platform for Black professionals working and aspiring to work in any field of tech.',
+        'Froware is the community platform for Black tech professionals. We have created a space for Black people working in tech and digital to connect, learn and collaborate. Froware is here to empower, nurture and promote Black tech talent.',
       ],
     },
     {
@@ -19,8 +19,8 @@ export const content = {
       image: Awareness,
       title: 'Awareness',
       body: [
-        `As a Black professional in the tech industry, it’s not always easy to have visibility of the expertise, resources and opportunities that exist across our community.`,
-        `We’re building a hub to signpost the content, experts, events (and more!) that you should know about.`,
+        `Being Black in tech can feel like a lonely journey at times. Having people that understand and can relate to your cultural context can help, though.`,
+        `We’re building a platform to bring together our tech expertise, curate the best and most relevant industry content, promote events and share networking opportunities.`,
       ],
     },
     {
@@ -28,8 +28,12 @@ export const content = {
       image: Support,
       title: 'Support',
       body: [
-        `Being a minority group in our industry, many of us have shared experiences of awkwardness, isolation and even hostility in the workplace caused or exacerbated by cultural differences.`,
-        `We’re creating a safe community where you can meet, converse, learn, collaborate and socialise with your peers.`,
+        `Being Black in our industry means, sadly, many of us have shared experiences of awkwardness, isolation and even hostility in the workplace caused, or made worse, by cultural differences.`,
+        `Froware is a safe, inclusive community where you can meet, converse, learn, collaborate and socialise with your Black peers.`,
+        `The Froware community will offer support in the form of:
+          - Virtual and physical events.
+          - Discussion forums.
+          - Interest groups.`,
       ],
     },
     {
@@ -37,8 +41,8 @@ export const content = {
       image: Progression,
       title: 'Progression',
       body: [
-        `In an industry that still has a long way to go towards genuine equality, it can often be challenging for Black professionals to find and seize the opportunities they deserve.`,
-        `Whether you’re a doer, a builder, a thinker or a creator, we’re committed to developing effective pathways to help you progress and succeed.`,
+        `In an industry that still has a long way to go towards genuine equality, it can often be challenging for Black professionals to grasp the opportunities we deserve.`,
+        `Whether your discipline is design, data or strategy-focused, we’re committed to developing effective pathways to help you progress and succeed.`,
       ],
     },
     {
@@ -46,8 +50,12 @@ export const content = {
       image: Proficiency,
       title: 'Proficiency',
       body: [
-        `In an industry that is inherently biased against minority groups, any perceived incompetence in one individual can be reflected in future prejudice against the entire community.`,
-        `We want to ensure that Black professionals are seen as not just valuable, but invaluable, through our collective level of expertise.`,
+        `The tech industry is still inherently biased against Black people. This manifests itself in many ways, from being overlooked for promotion to being denied funding for a start-up.`,
+        `Members will be provided with the right advice and tools to learn new skills and develop techniques that will help reach the next step and gain the recognition we deserve.`,
+        `Areas of development will include (but are not limited to):
+          - Networking
+          - Interview prep and salary negotiation
+          - Alternatives to VC funding`,
       ],
     },
     {
