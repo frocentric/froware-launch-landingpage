@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import Section from '../Section';
 
 const Sections = ({ sections, refs, onClick }) => {
-
-
   return (
     <>
       {sections.map((section, index) => (
