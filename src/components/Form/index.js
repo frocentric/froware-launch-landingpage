@@ -832,13 +832,12 @@ export default class CustomForm extends React.Component {
 
   submitCallback() {
     const formDataSerialized = this.cf.getFormData(true);
-    console.log("Formdata, obj:", formDataSerialized);
     updateMember(formDataSerialized)
       .then(data => console.log('data ==> ', data))
       .catch(error => console.log('error ==> ', error));
 
     this.cf.addRobotChatResponse(
-      "Thank you .... blurb about launch event and blog"
+      "Thank you for chatting with us, please visit our parent site <a href='https://frocentric.org' title='frocentric'>frocentric</a> for updates about our launch."
     );
   }
 
@@ -851,7 +850,7 @@ export default class CustomForm extends React.Component {
       ] = "none";
       clearMemberId();
       setTimeout(() => {
-        window.location.href = "/blog";
+        window.location.href = "https://frocentric.org";
       }, 5000);
     }
   }
@@ -864,7 +863,7 @@ export default class CustomForm extends React.Component {
       'mailing_list':'create',
       'cfc-profile': 'update'
     };
-    return events[name] ? events[name] : undefined;
+    return  events[name] || undefined;
   }
 
   formEventHandler = (event) => {
