@@ -46,6 +46,10 @@ export const getMemberId = (store = localStorage) => {
   });
 };
 
+export const clearMemberId = (store = localStorage) => {
+  store.clear();
+}
+
 export const createNewMember = async (data) => {
   const { url, params } = buildParams('create', data);
   try {

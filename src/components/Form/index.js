@@ -7,7 +7,7 @@ import {
 import { getCodeList, overwrite } from "country-list";
 import styled from 'styled-components';
 
-import { createNewMember, updateMember } from '../../services/froware';
+import { createNewMember, updateMember, clearMemberId } from '../../services/froware';
 
 const FrowareChatForm = styled.div`
   width: -webkit-fill-available;
@@ -849,6 +849,7 @@ export default class CustomForm extends React.Component {
       document.querySelector("#conversational-form").style[
         "pointer-events"
       ] = "none";
+      clearMemberId();
       setTimeout(() => {
         window.location.href = "/blog";
       }, 5000);
