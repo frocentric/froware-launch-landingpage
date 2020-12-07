@@ -7,6 +7,7 @@ import {
 import { getCodeList, overwrite } from "country-list";
 import styled from 'styled-components';
 
+import { createNewMember, updateMember } from '../../services/froware';
 
 const FrowareChatForm = styled.div`
   width: -webkit-fill-available;
@@ -430,8 +431,6 @@ export default class CustomForm extends React.Component {
             tag: "input",
             type: "checkbox",
             name: "cfc-interests",
-            value: "Industnd (min-width: 375px) ckbox",
-            name: "cfc-interests",
             value: "Networking",
             "cf-label": "Networking",
           },
@@ -832,13 +831,9 @@ export default class CustomForm extends React.Component {
   }
 
   submitCallback() {
-    var formDataSerialized = this.cf.getFormData(true);
+    const formDataSerialized = this.cf.getFormData(true);
     console.log("Formdata, obj:", formDataSerialized);
-    fetch('http://localhost:7000/api/v1/campaigns/froware-landing-page', {
-      method: 'POST',
-      body: JSON.stringify(formDataSerialized),
-    })
-      .then(res => res.json())
+    updateMember(formDataSerialized)
       .then(data => console.log('data ==> ', data))
       .catch(error => console.log('error ==> ', error));
 
@@ -847,22 +842,55 @@ export default class CustomForm extends React.Component {
     );
   }
 
+  endConversationHandler = (event) => {
+    const evt = this.getFormEventAction(event.detail.tag.name);
+    if (evt === 'end') {
+      window.ConversationalForm.flowManager.stop();
+      document.querySelector("#conversational-form").style[
+        "pointer-events"
+      ] = "none";
+      setTimeout(() => {
+        window.location.href = "/blog";
+      }, 5000);
+    }
+  }
+
+  // blatnently should be a useReducer LOL!
+  getFormEventAction = (name) => {
+    const events = {
+      'cfc-profile-ending': 'end',
+      'comments': 'end',
+      'mailing_list':'create',
+      'cfc-profile': 'update'
+    };
+    return events[name] ? events[name] : undefined;
+  }
+
+  formEventHandler = (event) => {
+    console.log(event.detail.step);
+    this.endConversationHandler(event);
+    const evt = this.getFormEventAction(event.detail.tag.name);
+
+    if (evt === 'create') {
+      const formDataSerialized = this.cf.getFormData(true);
+      createNewMember(formDataSerialized);
+    }
+    if (evt === 'update') {
+      const formDataSerialized = this.cf.getFormData(true);
+      updateMember(formDataSerialized);
+    }
+    if (event.detail.step >= 7) {
+      console.log('updating member')
+      const formDataSerialized = this.cf.getFormData(true);
+      updateMember(formDataSerialized);
+    }
+  }
+
   componentDidMount() {
     this.dispatcher = new EventDispatcher();
     this.dispatcher.addEventListener(
       FlowEvents.FLOW_UPDATE,
-      (event) => {
-        console.log(event);
-        if (event.detail.tag.name === "cfc-profile-ending" || event.detail.tag.name === "comments") {
-          window.ConversationalForm.flowManager.stop();
-          document.querySelector("#conversational-form").style[
-            "pointer-events"
-          ] = "none";
-          setTimeout(() => {
-            window.location.href = "/blog";
-          }, 5000);
-        }
-      },
+      this.formEventHandler,
       false
     );
     this.cf = ConversationalForm.startTheConversation({
