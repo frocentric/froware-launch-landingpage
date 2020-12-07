@@ -3,7 +3,7 @@ import {
   ConversationalForm,
   FlowEvents,
   EventDispatcher,
-} from "conversational-form";
+} from "./forked-cf/conversational-form";
 import { getCodeList, overwrite } from "country-list";
 import styled from 'styled-components';
 
@@ -762,7 +762,7 @@ export default class CustomForm extends React.Component {
     this.submitCallback = this.submitCallback.bind(this);
   }
 
-  /**
+   /**
    * Sets conditional display properties for all <fieldset /> child elements
    * @param {Object[]} formFields - an array of objects representing form elements
    */
@@ -894,16 +894,18 @@ export default class CustomForm extends React.Component {
       this.formEventHandler,
       false
     );
+        
     this.cf = ConversationalForm.startTheConversation({
       options: {
         submitCallback: this.submitCallback,
-        preventAutoFocus: true,
+        preventAutoFocus: false,
         eventDispatcher: this.dispatcher,
         // loadExternalStyleSheet: false
       },
       tags: this.formFields,
     });
-    this.elem.appendChild(this.cf.el);
+
+    this.elem.appendChild(this.cf.el)
   }
 
   render() {
