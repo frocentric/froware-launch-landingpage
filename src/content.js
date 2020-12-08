@@ -9,9 +9,9 @@ export const content = {
   sections: [
     {
       alignment: 'centre',
-      title: 'Tech through our eyes',
+      title: 'A community by and for Black technology professionals',
       body: [
-        'Froware is the community platform for Black tech professionals. We have created a space for Black people working in tech and digital to connect, learn and collaborate. Froware is here to empower, nurture and promote Black tech talent.',
+        `Froware is the community platform for Black tech professionals. We're creating a space for Black people working in tech and digital to connect, communicate and collaborate.`,
       ],
     },
     {
@@ -26,20 +26,16 @@ export const content = {
     {
       alignment: 'right',
       image: Support,
-      title: 'Support',
+      title: 'Empowerment',
       body: [
-        `Being Black in our industry means, sadly, many of us have shared experiences of awkwardness, isolation and even hostility in the workplace caused, or made worse, by cultural differences.`,
+        `We know, as Black people, the challenges faced within our professional environments. Sadly many of us can recall awkward experiences, isolation, or even hostility within the workplace caused, or made worse, by cultural differences.`,
         `Froware is a safe, inclusive community where you can meet, converse, learn, collaborate and socialise with your Black peers.`,
-        `The Froware community will offer support in the form of:
-          - Virtual and physical events.
-          - Discussion forums.
-          - Interest groups.`,
       ],
     },
     {
       alignment: 'left',
       image: Progression,
-      title: 'Progression',
+      title: 'Advancement',
       body: [
         `In an industry that still has a long way to go towards genuine equality, it can often be challenging for Black professionals to grasp the opportunities we deserve.`,
         `Whether your discipline is design, data or strategy-focused, we’re committed to developing effective pathways to help you progress and succeed.`,
@@ -48,14 +44,10 @@ export const content = {
     {
       alignment: 'right',
       image: Proficiency,
-      title: 'Proficiency',
+      title: 'Excellence',
       body: [
         `The tech industry is still inherently biased against Black people. This manifests itself in many ways, from being overlooked for promotion to being denied funding for a start-up.`,
         `Members will be provided with the right advice and tools to learn new skills and develop techniques that will help reach the next step and gain the recognition we deserve.`,
-        `Areas of development will include (but are not limited to):
-          - Networking
-          - Interview prep and salary negotiation
-          - Alternatives to VC funding`,
       ],
     },
     {
@@ -70,7 +62,7 @@ export const content = {
       alignment: 'none',
       title: 'Get Involved',
       body: [
-        `Now that you know all about us, we’d love to learn more about you. Let’s chat!`,
+        `Sounds good? Register your interest below and you'll be the first to know when we're ready to launch!`,
       ],
     },
   ],
