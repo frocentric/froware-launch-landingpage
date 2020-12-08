@@ -744,14 +744,14 @@ export default class CustomForm extends React.Component {
         type: "text",
         name: "questions_feedback",
         "cf-questions": "Do you have any questions or feedback you'd like to share?",
-        "cf-conditional-cfc-ethnicity": "black||mixed-heritage"
+        //"cf-conditional-cfc-ethnicity": "black||mixed-heritage"
       },
       {
         tag: "cf-robot-message",
         type: "text",
         name: "cfc-profile-ending",
         "cf-questions": `Thank for completing this form, we’ll let you know when we’re preparing to launch. You will be redirected to our blog where you can get updates on our progress`,
-        "cf-conditional-cfc-profile": "no",
+        //"cf-conditional-cfc-profile": "no",
       },
     ];
 
@@ -849,7 +849,7 @@ export default class CustomForm extends React.Component {
       clearMemberId();
       setTimeout(() => {
         document.location.href = "https://frocentric.org";
-      }, 5000);
+      }, 7000);
     }
   }
 
