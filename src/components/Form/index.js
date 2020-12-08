@@ -30,8 +30,12 @@ const FrowareChatForm = styled.div`
     max-width: 36rem;
   }
 
+  .conversational-form {
+    height: 50vh;
+  }
+
   .conversational-form, .conversational-form-inner {
-    position: relative !important;    
+    position: relative !important;
   }
 `;
 
@@ -128,12 +132,12 @@ export default class CustomForm extends React.Component {
           {
             tag: "option",
             value: "black",
-            "cf-label": "Black",
+            "cf-label": "African/Caribbean",
           },
           {
             tag: "option",
             value: "white",
-            "cf-label": "White",
+            "cf-label": "Caucasian",
           },
           {
             tag: "option",
@@ -142,18 +146,18 @@ export default class CustomForm extends React.Component {
           },
           {
             tag: "option",
-            value: "oriental",
-            "cf-label": "Oriental",
-          },
-          {
-            tag: "option",
             value: "mixed-heritage",
-            "cf-label": "Mixed (Black)",
+            "cf-label": "Mixed (African/Caribbean)",
           },
           {
             tag: "option",
             value: "mixed-other",
             "cf-label": "Mixed (Other)",
+          },
+          {
+            tag: "option",
+            value: "other",
+            "cf-label": "Other",
           },
         ],
       },
