@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.js": "/static/js/main.b94bf214.chunk.js",
-    "main.js.map": "/static/js/main.b94bf214.chunk.js.map",
+    "main.js": "/static/js/main.ce8ab15c.chunk.js",
+    "main.js.map": "/static/js/main.ce8ab15c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f3fed060.js",
     "runtime-main.js.map": "/static/js/runtime-main.f3fed060.js.map",
-    "static/js/2.3996747b.chunk.js": "/static/js/2.3996747b.chunk.js",
-    "static/js/2.3996747b.chunk.js.map": "/static/js/2.3996747b.chunk.js.map",
+    "static/js/2.f515d244.chunk.js": "/static/js/2.f515d244.chunk.js",
+    "static/js/2.f515d244.chunk.js.map": "/static/js/2.f515d244.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.3996747b.chunk.js.LICENSE.txt": "/static/js/2.3996747b.chunk.js.LICENSE.txt",
+    "static/js/2.f515d244.chunk.js.LICENSE.txt": "/static/js/2.f515d244.chunk.js.LICENSE.txt",
     "static/media/awareness.d6ed3e0c.svg": "/static/media/awareness.d6ed3e0c.svg",
     "static/media/facebook.2348e5f0.svg": "/static/media/facebook.2348e5f0.svg",
+    "static/media/froware-hero.b0561446.svg": "/static/media/froware-hero.b0561446.svg",
     "static/media/instagram.3f8d5bcb.svg": "/static/media/instagram.3f8d5bcb.svg",
     "static/media/linkedin.bbf46331.svg": "/static/media/linkedin.bbf46331.svg",
     "static/media/proficiency.9c346b29.svg": "/static/media/proficiency.9c346b29.svg",
-    "static/media/progression.5c268b15.svg": "/static/media/progression.5c268b15.svg",
-    "static/media/support.6e138b3f.svg": "/static/media/support.6e138b3f.svg",
-    "static/media/team.aaca10e2.svg": "/static/media/team.aaca10e2.svg",
+    "static/media/progression.b4518970.svg": "/static/media/progression.b4518970.svg",
+    "static/media/support.7f8d4b52.svg": "/static/media/support.7f8d4b52.svg",
+    "static/media/team.db953e9f.svg": "/static/media/team.db953e9f.svg",
     "static/media/twitter.6b4476b4.svg": "/static/media/twitter.6b4476b4.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f3fed060.js",
-    "static/js/2.3996747b.chunk.js",
-    "static/js/main.b94bf214.chunk.js"
+    "static/js/2.f515d244.chunk.js",
+    "static/js/main.ce8ab15c.chunk.js"
   ]
 }
