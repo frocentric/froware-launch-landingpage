@@ -6,36 +6,40 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-jrsJCI evNOqc"
+        class="sc-dIsAE eniDAc"
       >
         <div
-          class="sc-kEqYlL fQShKx"
+          class="sc-bqGHjH izQZqK"
         >
           <div
-            class="sc-eCApGN bwVyXU"
+            class="sc-iCoHVE cORByi"
           >
-            <h1>
-              Test Title 2
-            </h1>
-            <p
-              data-testid="section-text"
+            <div
+              class="sc-fujyUd cbSoHz"
             >
-              test body 1
-            </p>
-            <p
-              data-testid="section-text"
-            >
-              test body 2
-            </p>
+              <h1>
+                Test Title 2
+              </h1>
+              <p
+                data-testid="section-text"
+              >
+                test body 1
+              </p>
+              <p
+                data-testid="section-text"
+              >
+                test body 2
+              </p>
+            </div>
+            <img
+              alt="Test Title 2"
+              class="sc-pNWxx hwFqYV"
+              src="awareness.svg"
+            />
           </div>
-          <img
-            alt="Test Title 2"
-            class="sc-jSFkmK kLbfTo"
-            src="awareness.svg"
-          />
            
           <div
-            class="sc-pNWxx crXZMz"
+            class="sc-crzoUp cpIvVA"
           >
             <svg
               fill="none"
@@ -72,36 +76,40 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-jrsJCI evNOqc"
+      class="sc-dIsAE eniDAc"
     >
       <div
-        class="sc-kEqYlL fQShKx"
+        class="sc-bqGHjH izQZqK"
       >
         <div
-          class="sc-eCApGN bwVyXU"
+          class="sc-iCoHVE cORByi"
         >
-          <h1>
-            Test Title 2
-          </h1>
-          <p
-            data-testid="section-text"
+          <div
+            class="sc-fujyUd cbSoHz"
           >
-            test body 1
-          </p>
-          <p
-            data-testid="section-text"
-          >
-            test body 2
-          </p>
+            <h1>
+              Test Title 2
+            </h1>
+            <p
+              data-testid="section-text"
+            >
+              test body 1
+            </p>
+            <p
+              data-testid="section-text"
+            >
+              test body 2
+            </p>
+          </div>
+          <img
+            alt="Test Title 2"
+            class="sc-pNWxx hwFqYV"
+            src="awareness.svg"
+          />
         </div>
-        <img
-          alt="Test Title 2"
-          class="sc-jSFkmK kLbfTo"
-          src="awareness.svg"
-        />
          
         <div
-          class="sc-pNWxx crXZMz"
+          class="sc-crzoUp cpIvVA"
         >
           <svg
             fill="none"

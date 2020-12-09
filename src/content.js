@@ -3,12 +3,14 @@ import Support from './assets/support.svg';
 import Progression from './assets/progression.svg';
 import Proficiency from './assets/proficiency.svg';
 import Team from './assets/team.svg';
+import Hero from './assets/froware-hero.svg';
 
 export const content = {
   headerButton: 'Get Involved',
   sections: [
     {
-      alignment: 'centre',
+      alignment: 'hero',
+      image: Hero,
       title: 'A community by and for Black technology professionals',
       body: [
         `Froware is the community platform for Black tech professionals. We're creating a space for Black people working in tech and digital to connect, communicate and collaborate.`,

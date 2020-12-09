@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import CentredSection from './CentredSection';
+import Hero from './Hero';
 import RightTextSection from './RightTextSection';
 import LeftTextSection from './LeftTextSection';
 import EmbeddedForm from './EmbeddedForm';
@@ -11,7 +11,7 @@ const handleBackgroundColour = (alignment) => {
   switch (alignment) {
     case 'left':
       return '#EBEBEB';
-    case 'centre':
+    case 'hero':
       return '#f4f4f4';
     default:
       return '#fff';
@@ -21,24 +21,26 @@ const handleBackgroundColour = (alignment) => {
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  min-height: 422px;
+
+  @media (min-width: 1024px) {
+    height: 100vh;
+  }
 `;
 
 const Wrapper = styled.div`
   background-color: ${({ alignment }) => handleBackgroundColour(alignment)};
   grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  justify-items: center;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  column-gap: 20px;
+  flex-direction: column;
 `;
 
 const Section = React.forwardRef(({ section, onClick, id }, ref) => {
   const { alignment, image, title, body } = section;
 
   const SECTIONS = {
-    centre: <CentredSection title={title} body={body} />,
+    hero: <Hero title={title} body={body} image={image} />,
     left: <LeftTextSection title={title} body={body} image={image} />,
     right: <RightTextSection title={title} body={body} image={image} />,
     none: <EmbeddedForm title={title} body={body} />,

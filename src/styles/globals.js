@@ -6,7 +6,19 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 22px;
+    font-size: 16px;
+    line-height: 30px;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 36px;
+    }
+    
+    @media (min-width: 1440px) {
+      font-size: 22px;
+      line-height: 36px;
+    }
+
   }
 
   * {
@@ -14,7 +26,16 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 40px;
     font-weight: 900;
+    font-size: 30px;
+    line-height: 50px;
+
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
+  
+    @media (min-width: 1440px) {
+      font-size: 40px;
+    }
   }
 `;

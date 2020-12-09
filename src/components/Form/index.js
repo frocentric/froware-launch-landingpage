@@ -10,25 +10,7 @@ import styled from 'styled-components';
 import { createNewMember, updateMember, clearMemberId } from '../../services/froware';
 
 const FrowareChatForm = styled.div`
-  width: -webkit-fill-available;
-  width: -moz-available;
-  width: fill-available;
-
-  @media (min-width: 320px) {
-    max-width: 15rem;
-  }
-
-  @media (min-width: 425px) {
-    max-width: 17rem;
-  }
-
-  @media (min-width: 768px) {
-    max-width: 32rem;
-  }
-
-  @media (min-width: 1024px) {
-    max-width: 36rem;
-  }
+  grid-column: 2/12;
 
   .conversational-form {
     height: 50vh;

@@ -4,19 +4,18 @@ import styled from 'styled-components';
 import Form from '../Form/';
 
 const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  align-items: center;
+`;
+
+const Text = styled.div`
   grid-column: 2/12;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-`;
-
-const Text = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 316px;
 `;
 
 const EmbeddedForm = ({ title, body, children }) => (
