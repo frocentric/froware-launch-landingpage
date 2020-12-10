@@ -6,24 +6,38 @@ const TextWrapper = styled.div`
   grid-column: 2/12;
 
   @media (min-width: 1024px) {
-    grid-column: 6/12;
+    grid-column: 7/12;
   }
 `;
 
 const Image = styled.img`
   grid-column: 2/12;
-  max-width: 100%;
-  padding-top: 30px;
+  width: 50%;
+  padding: 40px 0 30px 0;
+  justify-self: center;
+
+  @media (min-width: 768px) {
+    grid-column: 2/12;
+    width: 50%;
+  }
 
   @media (min-width: 1024px) {
     grid-column: 2/6;
-    padding: 80px 0;
+    width: 80%;
+    padding: 0;
   }
+`;
+
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  align-items: center;
 `;
 
 const RightTextSection = ({ title, body, image }) => {
   return (
-    <>
+    <Container>
       <Image src={image} alt={title} />
       <TextWrapper>
         <h1>{title}</h1>
@@ -33,7 +47,7 @@ const RightTextSection = ({ title, body, image }) => {
           </p>
         ))}
       </TextWrapper>
-    </>
+    </Container>
   );
 };
 

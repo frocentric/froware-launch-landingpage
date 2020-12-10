@@ -2,6 +2,17 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    grid-gap: 20px;
+  }
+`;
+
 const TextWrapper = styled.div`
   grid-column: 2/12;
 
@@ -12,17 +23,24 @@ const TextWrapper = styled.div`
 
 const Image = styled.img`
   grid-column: 2/12;
-  max-width: 100%;
-  padding-top: 30px;
+  width: 50%;
+  padding: 40px 0 30px 0;
+  justify-self: center;
+
+  @media (min-width: 768px) {
+    grid-column: 2/12;
+    width: 40%;
+  }
 
   @media (min-width: 1024px) {
-    grid-column: 7/12;
-    padding: 80px 0;
+    grid-column: 8/12;
+    width: 80%;
+    padding: 0;
   }
 `;
 
 const MobileView = ({ title, body, image }) => (
-  <>
+  <Container>
     <Image src={image} alt={title} />
 
     <TextWrapper>
@@ -33,11 +51,11 @@ const MobileView = ({ title, body, image }) => (
         </p>
       ))}
     </TextWrapper>
-  </>
+  </Container>
 );
 
 const DesktopView = ({ title, body, image }) => (
-  <>
+  <Container>
     <TextWrapper>
       <h1>{title}</h1>
       {body.map((text, index) => (
@@ -47,7 +65,7 @@ const DesktopView = ({ title, body, image }) => (
       ))}
     </TextWrapper>
     <Image src={image} alt={title} />
-  </>
+  </Container>
 );
 
 const LeftTextSection = ({ title, body, image }) => {

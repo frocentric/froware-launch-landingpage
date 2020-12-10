@@ -8,7 +8,7 @@ describe('<Sections />', () => {
     render(<Sections sections={sections} refs={() => { }} onClick={() => { }} />);
 
     expect(screen.getAllByRole('heading')).toHaveLength(3);
-    expect(screen.getAllByRole('img')).toHaveLength(2);
+    expect(screen.getAllByRole('img')).toHaveLength(3);
     expect(screen.getAllByTestId('section-text')).toHaveLength(6);
   });
 });

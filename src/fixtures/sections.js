@@ -3,8 +3,9 @@ import Support from '../assets/support.svg';
 
 export const sections = [
   {
-    alignment: 'centre',
+    alignment: 'hero',
     title: 'Test Title 1',
+    image: Awareness,
     body: ['test body 1', 'test body 2'],
   },
   {
