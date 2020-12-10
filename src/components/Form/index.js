@@ -55,7 +55,7 @@ export default class CustomForm extends React.Component {
         tag: "input",
         type: "text",
         name: "last_name",
-        "cf-questions": "Thanks {first_name}! And what's your surname?",
+        "cf-questions": "Thanks {first_name}! And what's your last name?",
       },
       {
         tag: "select",
