@@ -16,10 +16,6 @@ import {
 const FrowareChatForm = styled.div`
   grid-column: 2/12;
 
-  .conversational-form {
-    height: 50vh;
-  }
-
   .conversational-form,
   .conversational-form-inner {
     position: relative !important;
