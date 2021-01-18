@@ -76,7 +76,7 @@ export default class CustomForm extends React.Component {
       },
       {
         tag: "fieldset",
-        "cf-questions": "Are you willing to tell us more about your self?",
+        "cf-questions": "Would you be willing to tell us more about yourself? As we prepare to launch, we want to better understand the community we're bringing together. Your responses, if you choose to share them, will only be used to help us prioritise our roadmap development and to share updates on the most relevant features.",
         children: [
           {
             tag: "input",
