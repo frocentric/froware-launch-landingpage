@@ -15,7 +15,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.2"
+    "@testing-library/user-event": "^12.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
