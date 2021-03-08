@@ -13,7 +13,7 @@ export const content = {
       image: Hero,
       title: 'A community by and for Black technology professionals',
       body: [
-        `Froware is the community platform for Black tech professionals. We're creating a space for Black people working in tech and digital to connect, communicate and collaborate.`,
+        `Frocentric:Tech is the community platform for Black tech professionals. We're creating a space for Black people working in tech and digital to connect, communicate and collaborate.`,
       ],
     },
     {
@@ -31,7 +31,7 @@ export const content = {
       title: 'Empowerment',
       body: [
         `We know, as Black people, the challenges faced within our professional environments. Sadly many of us can recall awkward experiences, isolation, or even hostility within the workplace caused, or made worse, by cultural differences.`,
-        `Froware is a safe, inclusive community where you can meet, converse, learn, collaborate and socialise with your Black peers.`,
+        `Frocentric:Tech is a safe, inclusive community where you can meet, converse, learn, collaborate and socialise with your Black peers.`,
       ],
     },
     {
@@ -69,10 +69,10 @@ export const content = {
     },
   ],
   footer: {
-    blurb: '© Copyright 2020, All Rights Reserved - Froware',
+    blurb: '© Copyright 2020-2021, All Rights Reserved - Frocentric',
     social: {
-      twitter: 'froware_',
-      linkedin: 'company/froware',
+      twitter: 'frocentric_tech',
+      instagram: 'frocentric_tech',
     },
   },
 };

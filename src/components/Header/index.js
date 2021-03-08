@@ -14,7 +14,7 @@ const StyledHeader = styled.div`
 const StyledLogo = styled.span`
   grid-column: 2/5;
   svg {
-    max-width: 140px;
+    max-width: 170px;
   }
 
   @media (min-width: 1024px) {

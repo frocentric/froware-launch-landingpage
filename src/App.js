@@ -23,7 +23,7 @@ const App = () => {
     <HelmetProvider>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>Froware</title>
+        <title>Frocentric:Tech | The premier community for Black tech professionals</title>
         <link
           href='https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap'
           rel='stylesheet'
