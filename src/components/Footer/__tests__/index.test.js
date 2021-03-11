@@ -7,7 +7,7 @@ describe('<Footer />', () => {
   it('should render the default state', () => {
     render(<Footer content={footer} />);
 
-    expect(screen.getByTestId('Froware Logo')).toBeInTheDocument();
+    expect(screen.getByTestId('Frocentric Logo')).toBeInTheDocument();
     expect(screen.getAllByRole('img')).toHaveLength(4);
   });
 });
