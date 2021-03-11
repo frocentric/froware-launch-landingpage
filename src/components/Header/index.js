@@ -29,7 +29,7 @@ const Header = ({ buttonText, onClick, lastSection }) => (
     <StyledLogo>
       <Logo fill='#000' />
     </StyledLogo>
-    <Button text={buttonText} onClick={onClick} lastSection={lastSection}/>
+    <Button text={buttonText} onClick={onClick} lastSection={lastSection} />
   </StyledHeader>
 );
 
