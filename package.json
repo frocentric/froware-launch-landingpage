@@ -6,8 +6,8 @@
   "dependencies": {
     "conversational-form": "^1.0.2",
     "country-list": "^2.2.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-helmet-async": "^1.0.9",
     "react-scripts": "4.0.3",
     "styled-components": "^5.2.0"
