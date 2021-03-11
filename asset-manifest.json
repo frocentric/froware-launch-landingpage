@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.79cc8719.chunk.js",
-    "main.js.map": "/static/js/main.79cc8719.chunk.js.map",
+    "main.js": "/static/js/main.344a96dc.chunk.js",
+    "main.js.map": "/static/js/main.344a96dc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f3fed060.js",
     "runtime-main.js.map": "/static/js/runtime-main.f3fed060.js.map",
-    "static/js/2.c330dcbb.chunk.js": "/static/js/2.c330dcbb.chunk.js",
-    "static/js/2.c330dcbb.chunk.js.map": "/static/js/2.c330dcbb.chunk.js.map",
+    "static/js/2.12bc7867.chunk.js": "/static/js/2.12bc7867.chunk.js",
+    "static/js/2.12bc7867.chunk.js.map": "/static/js/2.12bc7867.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.c330dcbb.chunk.js.LICENSE.txt": "/static/js/2.c330dcbb.chunk.js.LICENSE.txt",
+    "static/js/2.12bc7867.chunk.js.LICENSE.txt": "/static/js/2.12bc7867.chunk.js.LICENSE.txt",
     "static/media/awareness.d6ed3e0c.svg": "/static/media/awareness.d6ed3e0c.svg",
     "static/media/facebook.2348e5f0.svg": "/static/media/facebook.2348e5f0.svg",
     "static/media/froware-hero.b0561446.svg": "/static/media/froware-hero.b0561446.svg",
@@ -21,7 +21,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f3fed060.js",
-    "static/js/2.c330dcbb.chunk.js",
-    "static/js/main.79cc8719.chunk.js"
+    "static/js/2.12bc7867.chunk.js",
+    "static/js/main.344a96dc.chunk.js"
   ]
 }
