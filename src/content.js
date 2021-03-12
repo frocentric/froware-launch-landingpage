@@ -73,7 +73,6 @@ export const content = {
     social: {
       twitter: 'frocentric_tech',
       instagram: 'frocentric_tech',
-      linkedin: 'company/frocentric-tech'
     },
   },
 };
