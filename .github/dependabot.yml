@@ -1,0 +1,41 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    day: saturday
+  open-pull-requests-limit: 10
+  reviewers:
+  - tanyapowell
+  ignore:
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+    - 4.0.2
+  - dependency-name: "@testing-library/user-event"
+    versions:
+    - 12.6.3
+    - 12.7.0
+    - 12.7.1
+    - 12.7.2
+    - 12.7.3
+    - 12.8.0
+    - 12.8.1
+    - 13.0.0
+    - 13.0.1
+    - 13.0.10
+    - 13.0.13
+    - 13.0.16
+    - 13.0.2
+    - 13.0.7
+    - 13.1.1
+  - dependency-name: styled-components
+    versions:
+    - 5.2.2
+  - dependency-name: react-helmet-async
+    versions:
+    - 1.0.8
+  - dependency-name: "@testing-library/react"
+    versions:
+    - 11.2.3
